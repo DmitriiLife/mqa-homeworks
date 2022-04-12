@@ -23,7 +23,7 @@ jobs:
       run: chmod +x gradlew
     
     - name: Build with Gradle
-      run: ./gradlew build
+      run:  ./2.2 UI Automator/sample/gradlew build
       
   test:
     runs-on: macos-latest
@@ -43,4 +43,4 @@ jobs:
       uses: reactivecircus/android-emulator-runner@v2
       with:
         api-level: 29
-        script: ./gradlew connectedCheck
+        script: ./2.2 UI Automator/sample/gradlew connectedCheck
