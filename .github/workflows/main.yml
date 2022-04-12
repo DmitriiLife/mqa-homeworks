@@ -20,7 +20,7 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+      run: chmod +x ./2.2 UI Automator/sample/gradlew
     
     - name: Build with Gradle
       run:  ./2.2 UI Automator/sample/gradlew build
